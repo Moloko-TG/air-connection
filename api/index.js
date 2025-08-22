@@ -16,13 +16,14 @@ app.use(express.json());
 
 
 app.get("/", async (req, res) => {
-    res.render("home"), {
+    res.render("home", {
         title: 'Home',
         style: '<link rel="stylesheet" href="../css/style.css">',
         script: '<script src="../js/main.js"></script>'
-    }
+    });
 });
 
 
 module.exports = app;
+
 
